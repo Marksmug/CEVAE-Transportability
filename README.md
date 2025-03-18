@@ -1,5 +1,5 @@
 # Transfer Learning in Latent Contextual Bandits with Covariate Shift Through Causal Transportability
-This repo is the code for the experiment in the paper [Transfer Learning in Latent Contextual Bandits with Covariate Shift Through Causal Transportability], which will be presented in the conference [CLeaR 2025](https://www.cclear.cc/2025).
+This repo is the code for the experiment in the paper [Transfer Learning in Latent Contextual Bandits with Covariate Shift Through Causal Transportability](https://arxiv.org/abs/2502.20153), which will be presented in the conference [CLeaR 2025](https://www.cclear.cc/2025).
 
 The implementation of CEVAE is based on the paper [A Critical Look at the Consistency of Causal Estimation with Deep Latent Variable Models](https://github.com/severi-rissanen/critical_look_causal_dlvms).  
 
