@@ -1,7 +1,7 @@
 # Transfer Learning in Latent Contextual Bandits with Covariate Shift Through Causal Transportability
-This repo contains the code for the experiment in the paper [Transfer Learning in Latent Contextual Bandits with Covariate Shift Through Causal Transportability](https://arxiv.org/abs/2502.20153), which will be presented in the conference [CLeaR 2025](https://www.cclear.cc/2025).
+This repo contains code for the experiment in the paper [Transfer Learning in Latent Contextual Bandits with Covariate Shift Through Causal Transportability](https://arxiv.org/abs/2502.20153), which will be presented at the conference [CLeaR 2025](https://www.cclear.cc/2025).
 
-The implementation of VAE is based on [this repo](https://github.com/severi-rissanen/critical_look_causal_dlvms).  
+The implementation of CEVAE is based on [this repo](https://github.com/severi-rissanen/critical_look_causal_dlvms).  
 
 ## Instruction
 The experiment with proxy IHDP dataset and proxy MNIST dataset can be done by running 
@@ -16,15 +16,15 @@ The experiment with proxy IHDP dataset and proxy MNIST dataset can be done by ru
 5. Evaluating the performance with target domain data 
 6. Plotting results
 
-The first two steps are optional since we have included pretrained data-generating models in `.VAE_transfer/datageneratormodels/`. To run the first two steps, you need to download corresponding datasets to `.VAE_transfer/Data/IHDP` or `.VAE_transfer/Data/MNIST`, which can be downloaded from 
+The first two steps are optional since we have included pretrained data-generating models in `.VAE_transfer/datageneratormodels/`. To run the first steps, you need to download the corresponding datasets to `.VAE_transfer/Data/IHDP` or `.VAE_transfer/Data/MNIST`, which can be downloaded from 
 - [IHDP](https://www.fredjo.com/)
 - [MNIST](http://yann.lecun.com/exdb/mnist/)
 
-The MNIST data-generating models trainning is done in a separate notebook `.VAE_transfer/GAN_model_tranining.ipynb`. 
+The training for MNIST data-generating models is done in a separate notebook `.VAE_transfer/GAN_model_tranining.ipynb`. 
 
-The third step that generating data for the experiment using data-generating models and divide the source domain and target domain in three ways:
+The third step uses data-generating models and divides the source domain and target domain by three methods:
 1. Separate by a binary covariate in the proxy
 2. Separate by truncating the data on the latent context
-3. Separate by sampling two distinguish Gaussians on the laten context
+3. Separate by sampling two distinguishable Gaussians on the latent context
 
-The last two ways are used in the paper.
+The last two methods are used in the paper.
